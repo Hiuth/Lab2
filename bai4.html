@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 4</title>
+  </head>
+  <body>
+    <hr>
+      <div class="form-group">
+        <label>Họ và tên:</label>
+        <input class="form-control" type="text" />
+      </div>
+      <div class="form-group">
+        <fieldset>
+          <legend>Giới Tính:</legend>
+          <input type="radio" />
+          <label>Nam</label>
+          <input type="radio" />
+          <label>Nữ</label>
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <label>Ngày Sinh:</label>
+        <input class="form-control" type="data" />
+      </div>
+      <div class="form-group">
+        <label>Điểm: </label>
+        <input
+          class="form-control"
+          type="number"
+          min="0"
+          max="10"
+          step="0.25"
+        />
+      </div>
+      <div class="form-group">
+        <label>Nghề Nghiệp: </label>
+        <input class="form-control" type="list" list="job" />
+        <datalist id="job">
+          <option value="Giảng viên"></option>
+          <option value="IT"></option>
+          <option value="Kỹ sư"></option>
+          <option value="Banker"></option>
+          <option value="Phục vụ"></option>
+        </datalist>
+      </div>
+      <div class="form-group">
+        <fieldset>
+          <legend>Sở thích:</legend>
+          <input type="checkbox" />
+          <legend>Thể Thao</legend>
+          <input type="checkbox" />
+          <legend>Du lịch</legend>
+          <input type="checkbox" />
+          <legend>Âm Nhạc</legend>
+          <input type="checkbox" />
+          <legend>Ẩm thực</legend>
+        </fieldset>
+      </div>
+      <div class="form-group">
+        <label>Ghi chú: </label>
+        <textarea class="form-control"></textarea>
+      </div>
+    <hr/>
+    <div class="form-group">
+        <button class ="form-button">Đăng ký</button>
+        <button class ="form-button">Nhập lại</button>
+    </div>
+    </form>
+  </body>
+</html>

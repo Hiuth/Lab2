@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="post" enctype="multipart/from-data">
+      <div class="form-group">
+        <div>Họ Tên:</div>
+        <input type="text" name="username" class="form-control" />
+      </div>
+      <label
+        >Giới tính: <input name="gender" type="radio" checked /> Nam
+        <input name="gender" type="radio" /> Nữ
+      </label>
+      <div>Hình ảnh:</div>
+      <input type="file" id="myfile" name="filename" />
+      <div>Quốc tịch:</div>
+      <select name="cars" id="cars">
+        <option value="us">United Stated</option>
+        <option value="vn" selected>Việt nam</option>
+        <option value="tl">Thái Lan</option>
+        <option value="sg">Singapore</option>
+      </select>
+      <div>Sở Thích</div>
+      <label
+        ><input name="like" type="checkbox" /> Thể Thao
+        <input name="like" type="checkbox" checked /> Du lịch
+        <input name="like" type="checkbox" /> Âm Nhạc
+        <input name="like" type="checkbox" /> Ẩm thực
+      </label>
+      <div>Ghi chú:</div>
+      <textarea></textarea>
+      <hr />
+      <button>Login</button>
+    </form>
+  </body>
+</html>
